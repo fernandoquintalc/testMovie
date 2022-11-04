@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">eMovie</string>
+
+    <!-- Labels -->
+    <string name="label_movies_upcoming">Movies upcoming</string>
+    <string name="label_movies_rated">Movies rated</string>
+    <string name="label_movies_recommend_for_you">Movies recommend for you</string>
+
+
+    <!-- Chips -->
+    <string name="chip_in_english">English</string>
+    <string name="chip_year">Releases 2020</string>
+
+    <!-- Buttons -->
+    <string name="button_see_trailer">See trailer</string>
+    <string name="button_video_not_available">Video no available</string>
+    <string name="button_verify_trailer">Verifying trailer</string>
+</resources>

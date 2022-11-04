@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eMovie</string>
+    <string name="label_movies_upcoming">Próximos estrenos</string>
+    <string name="label_movies_rated">Tendencia</string>
+    <string name="label_movies_recommend_for_you">Recomendados para ti</string>
+    <string name="chip_in_english">Inglés</string>
+    <string name="chip_year">Lanzamientos en 2020</string>
+    <string name="button_see_trailer">Ver trailer</string>
+    <string name="button_video_not_available">Video no disponible</string>
+    <string name="button_verify_trailer">Verificando trailer</string>
+</resources>

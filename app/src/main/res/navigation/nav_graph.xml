@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.fernando.test.ui.movie.list.MovieListFragment"
+        android:label="MovieListFragment">
+        <action
+            android:id="@+id/action_movieListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.fernando.test.ui.movie.detail.MovieDetailFragment"
+        android:label="MovieDetailFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.fernando.test.domain.Movie"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_movieDetailFragment_to_moviePlayerFragment"
+            app:destination="@id/moviePlayerFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/moviePlayerFragment"
+        android:name="com.fernando.test.ui.movie.player.MoviePlayerFragment"
+        android:label="MoviePlayerFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.fernando.test.domain.Movie"
+            app:nullable="false" />
+
+        <argument
+            android:name="videoId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.fernando.test.ui.movie.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/splashFragment"/>
+    </fragment>
+</navigation>
